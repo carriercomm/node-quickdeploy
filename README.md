@@ -8,7 +8,7 @@ Monit script is printed to stdout because you n't want to overwrite your monit c
 
 Make sure you don't have any other upstart script with same name because otherwise it will be overwritten.
 
-
+<pre>
 usage: deploy_node.py [-h] NAME PATH USER HOME AUTHOR PORT
 
 Deploys node.js with upstart and monit
@@ -24,15 +24,19 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-
+</pre>
 Example:
 
 
 Generate upstart and monit configurations straight to their places:
+<pre>
 	python deploy_node.py test /srv/nodejs/examples/example.js nodeuser /srv/nodejs/examples/ "Tero Testi" 2222 |tee /etc/monit/monitrc
-
+</pre>
 Start your upstart/node process:
+<pre>
 	start test
-
+</pre>
 Start monit by running:
+<pre>
 	monit -d 60 -c /etc/monit/monitrc
+</pre>
