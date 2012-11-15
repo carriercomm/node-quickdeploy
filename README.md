@@ -8,6 +8,12 @@ Monit script is printed to stdout because you n't want to overwrite your monit c
 
 Make sure you don't have any other upstart script with same name because otherwise it will be overwritten.
 
+Requirements
+============
+ * pystaches
+ * monit
+ * upstart
+
 <pre>
 usage: deploy_node.py [-h] NAME PATH USER HOME AUTHOR PORT
 
