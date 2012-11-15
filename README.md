@@ -10,7 +10,7 @@ Make sure you don't have any other upstart script with same name because otherwi
 
 Requirements
 ============
- * pystaches
+ * pystache
  * monit
  * upstart
 
