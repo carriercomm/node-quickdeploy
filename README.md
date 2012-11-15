@@ -29,10 +29,10 @@ Example:
 
 
 Generate upstart and monit configurations straight to their places:
-python deploy_node.py test /srv/nodejs/examples/example.js nodeuser /srv/nodejs/examples/ "Tero Testi" 2222 |tee /etc/monit/monitrc
+	python deploy_node.py test /srv/nodejs/examples/example.js nodeuser /srv/nodejs/examples/ "Tero Testi" 2222 |tee /etc/monit/monitrc
 
 Start your upstart/node process:
-start test
+	start test
 
 Start monit by running:
-monit -d 60 -c /etc/monit/monitrc
+	monit -d 60 -c /etc/monit/monitrc
