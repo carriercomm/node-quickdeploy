@@ -51,4 +51,5 @@ Start monit by running:
 
 ## Only generate configuration-files
 
-Same than earlier but the script is ´generateconfs.py´
+Same than earlier but the script is `generateconfs.py`
+
