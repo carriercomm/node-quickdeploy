@@ -3,14 +3,15 @@ node-quickdeploy
 
 Python script generating upstart and monit configuration-files for production environment.
 
-At The Moment script generates and saves upstart script and put it straight to it's place at /etc/init/<application_name>
+At The Moment script generates and saves upstart script and put it straight to it's place at `/etc/init/<application_name>`
+
 Monit script is printed to stdout because you n't want to overwrite your monit configurations.
 
 Make sure you don't have any other upstart script with same name because otherwise it will be overwritten.
 
 Requirements
 ============
- * pystache
+ * pystache (You can install with pip `pip install pystache`)
  * monit
  * upstart
 
