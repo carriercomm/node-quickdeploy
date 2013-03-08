@@ -34,6 +34,7 @@ optional arguments:
 </pre>
 Example:
 
+## Default use
 
 Generate upstart and monit configurations straight to their places:
 <pre>
@@ -47,3 +48,7 @@ Start monit by running:
 <pre>
 	monit -d 60 -c /etc/monit/monitrc
 </pre>
+
+## Only generate configuration-files
+
+Same than earlier but the script is ´generateconfs.py´
