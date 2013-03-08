@@ -2,7 +2,7 @@ import pystache
 
 import argparse
 
-output = '/etc/init/'
+output = './output/'
 
 parser = argparse.ArgumentParser(prefix_chars='-', description='Deploys node.js with upstart and monit')
 parser.add_argument('application_name', metavar='NAME', help="application machine name (dont use any special letters or spaces)")
