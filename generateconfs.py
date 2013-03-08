@@ -22,9 +22,9 @@ upstart.write(pystache.render(template.read(), args))
 upstart.close()
 
 monit_out = open(output+args.application_name+'.monit.conf', 'w')
-monit_out.write( pystache.render(monit.read(), args)
+monit_out.write( pystache.render(monit.read(), args))
 
-monit_out.close();
+monit_out.close()
 
 template.close()
 #print args
